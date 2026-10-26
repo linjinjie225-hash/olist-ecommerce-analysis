@@ -1,0 +1,447 @@
+{
+  "overview": {
+    "months": 20,
+    "total_orders": 97905,
+    "total_gmv": 13449529.68,
+    "aov": 137.37326673816455,
+    "peak_month": "2017-11",
+    "gmv_2017_08": 568245.79,
+    "gmv_2018_08": 848860.1
+  },
+  "delay_buckets": [
+    {
+      "delay_bucket": "01 提前10天以上",
+      "orders": 61523,
+      "avg_score": 4.323,
+      "bad_review_rate": 0.0889,
+      "five_star_rate": 0.6396
+    },
+    {
+      "delay_bucket": "02 提前5~9天",
+      "orders": 20032,
+      "avg_score": 4.256,
+      "bad_review_rate": 0.096,
+      "five_star_rate": 0.6012
+    },
+    {
+      "delay_bucket": "03 提前0~4天",
+      "orders": 7888,
+      "avg_score": 4.12,
+      "bad_review_rate": 0.1137,
+      "five_star_rate": 0.5451
+    },
+    {
+      "delay_bucket": "04 延迟1~3天",
+      "orders": 1852,
+      "avg_score": 3.291,
+      "bad_review_rate": 0.3213,
+      "five_star_rate": 0.3315
+    },
+    {
+      "delay_bucket": "05 延迟4~7天",
+      "orders": 1747,
+      "avg_score": 2.101,
+      "bad_review_rate": 0.6772,
+      "five_star_rate": 0.1402
+    },
+    {
+      "delay_bucket": "06 延迟8~14天",
+      "orders": 1446,
+      "avg_score": 1.671,
+      "bad_review_rate": 0.8015,
+      "five_star_rate": 0.0685
+    },
+    {
+      "delay_bucket": "07 延迟15天以上",
+      "orders": 1335,
+      "avg_score": 1.724,
+      "bad_review_rate": 0.7835,
+      "five_star_rate": 0.0719
+    }
+  ],
+  "late_vs_ontime_bad_review": {
+    "rate_a": 0.09267354628087161,
+    "rate_b": 0.624294670846395,
+    "abs_diff": 0.5316211245655234,
+    "rel_diff": 5.736492730668851,
+    "ci_low": 0.5195863150415382,
+    "ci_high": 0.5436559340895085,
+    "p_value": 0.0,
+    "n_late": 6380,
+    "n_ontime": 89443
+  },
+  "mh_by_state": {
+    "rd": 0.5263716691097569,
+    "ci_low": 0.514401852235496,
+    "ci_high": 0.5383414859840178,
+    "strata_used": 27
+  },
+  "mh_by_category": {
+    "rd": 0.5305268265683446,
+    "ci_low": 0.5185497184792642,
+    "ci_high": 0.542503934657425,
+    "strata_used": 67
+  },
+  "attribution": {
+    "total_bad_reviews": 12272,
+    "late_share_of_orders": 0.06658109222211786,
+    "late_share_of_bad_reviews": 0.3245599739243807,
+    "excess_bad_reviews_from_late": 3391.742774728039,
+    "excess_share_of_all_bad": 0.27638060419882976
+  },
+  "scenario_half_late": {
+    "bad_reviews_avoided": 1695.8713873640195,
+    "bad_review_rate_now": 0.12806946140279474,
+    "bad_review_rate_after": 0.11037150384183318,
+    "avg_score_now": 4.155870719973284,
+    "avg_score_after": 4.223128387948584
+  },
+  "root_cause": [
+    {
+      "seller_handover": "卖家按时发货",
+      "orders": 87758,
+      "order_share": 0.9097,
+      "late_orders": 4719,
+      "late_rate": 0.0538,
+      "share_of_all_late": 0.7223,
+      "avg_handling_days": 2.16,
+      "avg_transit_days": 9.28
+    },
+    {
+      "seller_handover": "卖家超时发货",
+      "orders": 8711,
+      "order_share": 0.0903,
+      "late_orders": 1814,
+      "late_rate": 0.2082,
+      "share_of_all_late": 0.2777,
+      "avg_handling_days": 9.28,
+      "avg_transit_days": 9.87
+    }
+  ],
+  "median_days": {
+    "0": {
+      "handling_days": 1.76,
+      "transit_days": 6.95
+    },
+    "1": {
+      "handling_days": 3.05,
+      "transit_days": 26.2
+    }
+  },
+  "state": [
+    {
+      "customer_state": "AL",
+      "orders": 397,
+      "late_rate": 0.2141,
+      "avg_transit_days": 21.1,
+      "bad_review_rate": 0.2132,
+      "late_rank": 1
+    },
+    {
+      "customer_state": "MA",
+      "orders": 717,
+      "late_rate": 0.1743,
+      "avg_transit_days": 18.0,
+      "bad_review_rate": 0.1994,
+      "late_rank": 2
+    },
+    {
+      "customer_state": "SE",
+      "orders": 335,
+      "late_rate": 0.1522,
+      "avg_transit_days": 17.9,
+      "bad_review_rate": 0.1886,
+      "late_rank": 3
+    },
+    {
+      "customer_state": "PI",
+      "orders": 476,
+      "late_rate": 0.1387,
+      "avg_transit_days": 16.3,
+      "bad_review_rate": 0.1614,
+      "late_rank": 4
+    },
+    {
+      "customer_state": "CE",
+      "orders": 1279,
+      "late_rate": 0.1376,
+      "avg_transit_days": 17.9,
+      "bad_review_rate": 0.1712,
+      "late_rank": 5
+    },
+    {
+      "customer_state": "BA",
+      "orders": 3256,
+      "late_rate": 0.1216,
+      "avg_transit_days": 16.0,
+      "bad_review_rate": 0.17,
+      "late_rank": 6
+    },
+    {
+      "customer_state": "RJ",
+      "orders": 12350,
+      "late_rate": 0.1211,
+      "avg_transit_days": 12.0,
+      "bad_review_rate": 0.1833,
+      "late_rank": 7
+    },
+    {
+      "customer_state": "PA",
+      "orders": 946,
+      "late_rate": 0.1121,
+      "avg_transit_days": 20.3,
+      "bad_review_rate": 0.179,
+      "late_rank": 8
+    },
+    {
+      "customer_state": "ES",
+      "orders": 1995,
+      "late_rate": 0.1073,
+      "avg_transit_days": 12.4,
+      "bad_review_rate": 0.1381,
+      "late_rank": 9
+    },
+    {
+      "customer_state": "PB",
+      "orders": 517,
+      "late_rate": 0.1044,
+      "avg_transit_days": 16.9,
+      "bad_review_rate": 0.1484,
+      "late_rank": 10
+    },
+    {
+      "customer_state": "MS",
+      "orders": 701,
+      "late_rate": 0.097,
+      "avg_transit_days": 12.5,
+      "bad_review_rate": 0.133,
+      "late_rank": 11
+    },
+    {
+      "customer_state": "PE",
+      "orders": 1593,
+      "late_rate": 0.096,
+      "avg_transit_days": 15.2,
+      "bad_review_rate": 0.1482,
+      "late_rank": 12
+    },
+    {
+      "customer_state": "RN",
+      "orders": 474,
+      "late_rate": 0.0928,
+      "avg_transit_days": 15.7,
+      "bad_review_rate": 0.1295,
+      "late_rank": 13
+    },
+    {
+      "customer_state": "SC",
+      "orders": 3546,
+      "late_rate": 0.0821,
+      "avg_transit_days": 11.6,
+      "bad_review_rate": 0.1299,
+      "late_rank": 14
+    },
+    {
+      "customer_state": "GO",
+      "orders": 1957,
+      "late_rate": 0.0654,
+      "avg_transit_days": 12.4,
+      "bad_review_rate": 0.1316,
+      "late_rank": 15
+    },
+    {
+      "customer_state": "RS",
+      "orders": 5344,
+      "late_rate": 0.0608,
+      "avg_transit_days": 12.1,
+      "bad_review_rate": 0.1192,
+      "late_rank": 16
+    },
+    {
+      "customer_state": "MT",
+      "orders": 886,
+      "late_rate": 0.0598,
+      "avg_transit_days": 14.9,
+      "bad_review_rate": 0.1274,
+      "late_rank": 17
+    },
+    {
+      "customer_state": "DF",
+      "orders": 2080,
+      "late_rate": 0.0567,
+      "avg_transit_days": 9.8,
+      "bad_review_rate": 0.1324,
+      "late_rank": 18
+    },
+    {
+      "customer_state": "MG",
+      "orders": 11354,
+      "late_rate": 0.0457,
+      "avg_transit_days": 8.8,
+      "bad_review_rate": 0.1175,
+      "late_rank": 19
+    },
+    {
+      "customer_state": "SP",
+      "orders": 40493,
+      "late_rate": 0.0449,
+      "avg_transit_days": 5.6,
+      "bad_review_rate": 0.1069,
+      "late_rank": 20
+    },
+    {
+      "customer_state": "PR",
+      "orders": 4923,
+      "late_rate": 0.0404,
+      "avg_transit_days": 8.8,
+      "bad_review_rate": 0.1088,
+      "late_rank": 21
+    }
+  ],
+  "repurchase": {
+    "rate_a": 0.028871340892143552,
+    "rate_b": 0.025362318840579712,
+    "abs_diff": -0.0035090220515638405,
+    "rel_diff": -0.1215399750455897,
+    "ci_low": -0.008669857091809289,
+    "ci_high": 0.0016518129886816087,
+    "p_value": 0.206880910853237,
+    "n_ontime": 52301,
+    "n_late": 3864,
+    "mde_abs": 0.007820550375445172,
+    "mde_rel": 0.2708758974742768
+  },
+  "rfm": [
+    {
+      "segment": "1 复购用户",
+      "customers": 2565,
+      "customer_share": 0.0275,
+      "total_value": 804827.87,
+      "value_share": 0.0522,
+      "avg_value": 313.77,
+      "avg_recency_days": 217.8,
+      "avg_frequency": 2.11
+    },
+    {
+      "segment": "2 近期高价值新客",
+      "customers": 7037,
+      "customer_share": 0.0754,
+      "total_value": 3163075.11,
+      "value_share": 0.2051,
+      "avg_value": 449.49,
+      "avg_recency_days": 94.2,
+      "avg_frequency": 1.0
+    },
+    {
+      "segment": "3 近期普通新客",
+      "customers": 29587,
+      "customer_share": 0.317,
+      "total_value": 2860875.04,
+      "value_share": 0.1855,
+      "avg_value": 96.69,
+      "avg_recency_days": 92.7,
+      "avg_frequency": 1.0
+    },
+    {
+      "segment": "4 沉睡高价值",
+      "customers": 10205,
+      "customer_share": 0.1093,
+      "total_value": 4443742.34,
+      "value_share": 0.2882,
+      "avg_value": 435.45,
+      "avg_recency_days": 343.5,
+      "avg_frequency": 1.0
+    },
+    {
+      "segment": "5 沉睡普通",
+      "customers": 43954,
+      "customer_share": 0.4709,
+      "total_value": 4148368.51,
+      "value_share": 0.269,
+      "avg_value": 94.38,
+      "avg_recency_days": 338.7,
+      "avg_frequency": 1.0
+    }
+  ],
+  "seller_pareto": {
+    "n_sellers": 2960,
+    "sellers_with_any_late": 1326,
+    "top_1pct": {
+      "sellers": 29,
+      "late_share": 0.301,
+      "order_share": 0.1721
+    },
+    "top_5pct": {
+      "sellers": 148,
+      "late_share": 0.6244,
+      "order_share": 0.4114
+    },
+    "top_10pct": {
+      "sellers": 296,
+      "late_share": 0.7678,
+      "order_share": 0.5564
+    },
+    "top10": [
+      {
+        "seller_id": "7c67e1448b00f6e969d365cea6b010ab",
+        "orders": 966,
+        "seller_late_orders": 288,
+        "seller_late_rate": 0.2981
+      },
+      {
+        "seller_id": "1025f0e2d44d7041d6cf58b6550e0bfa",
+        "orders": 898,
+        "seller_late_orders": 162,
+        "seller_late_rate": 0.1804
+      },
+      {
+        "seller_id": "4a3ca9315b744ce9f8e9374361493884",
+        "orders": 1726,
+        "seller_late_orders": 154,
+        "seller_late_rate": 0.0892
+      },
+      {
+        "seller_id": "1f50f920176fa81dab994f9023523100",
+        "orders": 1384,
+        "seller_late_orders": 150,
+        "seller_late_rate": 0.1084
+      },
+      {
+        "seller_id": "3d871de0142ce09b7081e2b9d1733cb1",
+        "orders": 1052,
+        "seller_late_orders": 137,
+        "seller_late_rate": 0.1302
+      },
+      {
+        "seller_id": "06a2c3af7b3aee5d69171b0e14f0ee87",
+        "orders": 388,
+        "seller_late_orders": 121,
+        "seller_late_rate": 0.3119
+      },
+      {
+        "seller_id": "88460e8ebdecbfecb5f9601833981930",
+        "orders": 238,
+        "seller_late_orders": 117,
+        "seller_late_rate": 0.4916
+      },
+      {
+        "seller_id": "53e4c6e0f4312d4d2107a8c9cddf45cd",
+        "orders": 453,
+        "seller_late_orders": 94,
+        "seller_late_rate": 0.2075
+      },
+      {
+        "seller_id": "8160255418d5aaa7dbdc9f4c64ebda44",
+        "orders": 368,
+        "seller_late_orders": 90,
+        "seller_late_rate": 0.2446
+      },
+      {
+        "seller_id": "ea8482cd71df3c1969d7b9473ff13abc",
+        "orders": 1122,
+        "seller_late_orders": 87,
+        "seller_late_rate": 0.0775
+      }
+    ]
+  }
+}
